@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+            
+            <TextView 
+                android:textSize="22sp" 
+                android:textColor="#404040" 
+                android:id="@+id/titleTextView" 
+                android:padding="4dp" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="50dp"/>
+
+            <TextView 
+                android:textSize="19sp" 
+                android:textColor="#404040" 
+                android:id="@+id/contentTextView"
+                android:scrollbars="vertical" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:maxLines="6"
+                android:minLines="6" />
+
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"
+            android:orientation="horizontal"
+            android:id="@+id/footer"
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content">
+
+            <ImageView 
+                android:id="@+id/copy_text" 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:src="@drawable/ic_copy_text" />
+
+
+            <com.like.LikeButton 
+                android:id="@+id/favourite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+
+            <ImageView 
+                android:id="@+id/share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_share" />
+
+        </LinearLayout>
+
+  
+</RelativeLayout>
